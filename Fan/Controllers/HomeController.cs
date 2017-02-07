@@ -22,8 +22,19 @@ namespace Fan.Controllers
 
         public ActionResult Contact()
         {
+            ViewBag.Message = "RA4EVR";
+
+            return View();
+        }
+        public ActionResult External()
+        {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+        public ActionResult ContactUs()
+        {
+            ViewBag.Message = "Send us a message";
             return View();
         }
     }
